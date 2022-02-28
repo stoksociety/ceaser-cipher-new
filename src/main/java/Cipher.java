@@ -1,3 +1,5 @@
+//Encapsulation, is to make sure that "sensitive" data is hidden from users
+
 //This is where the getter and setter method starts
 public class Cipher {
 //these private modifier is accessible within the class that i declared.
@@ -15,6 +17,8 @@ public class Cipher {
     public void setInputString(String inputString) {
 
         this.inputString = inputString;
+        // set method takes a parameter (inputString) and assigns it to the inputString variable
+        //this is used to refer to the current object.
     }
 
 
