@@ -52,7 +52,7 @@ public class App {
 
 
             } else {
-                System.out.println("input valid details details");
+                System.out.println("input valid details");
             }
 
         }
