@@ -16,14 +16,16 @@ public class DecodingCipher {
                     decodedCipher += character;
 
 
-                } else if (Character.isUpperCase(singleChar)) {
+                }
+                else if (Character.isUpperCase(singleChar)) {
                     char character = (char) (singleChar - cipherKey);
 
-                    decodedCipher += character;
+                    decodedCipher = decodedCipher + character;
                 }
 
 
-            } else {
+            }
+            else {
                 decodedCipher += singleChar;
             }
         }
