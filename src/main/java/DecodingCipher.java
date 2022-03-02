@@ -1,18 +1,11 @@
-
 public class DecodingCipher {
 
 
     public String decode(String inputString, int cipherKey) {
-
-        //Conv string to  array of characters
-
-        int i;
-
-        // is an index and should be a number.
         String decodedCipher = "";
-        for (i = 0; i < inputString.length(); i++) {
-            char singleChar = inputString.charAt(i);
 
+        for (int i = 0; i < inputString.length(); i++) {
+            char singleChar = inputString.charAt(i);
 
             if (Character.isLetter(singleChar)) {
 
@@ -20,19 +13,27 @@ public class DecodingCipher {
                 if (Character.isLowerCase(singleChar)) {
                     char character = (char) (singleChar - cipherKey);
 
-                    decodedCipher = decodedCipher + character;
+                    decodedCipher += character;
 
 
-                } else {
-                    decodedCipher = decodedCipher + singleChar;
+                } else if (Character.isUpperCase(singleChar)) {
+                    char character = (char) (singleChar - cipherKey);
+
+                    decodedCipher += character;
                 }
+
+
+            } else {
+                decodedCipher += singleChar;
             }
-
-
-            return decodedCipher;
-
-
         }
+
+
         return decodedCipher;
+
+
     }
 }
+
+
+

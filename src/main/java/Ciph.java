@@ -18,7 +18,7 @@ public class Ciph{
 
         this.inputString = inputString;
         // set method takes a parameter (inputString) and assigns it to the inputString variable
-        
+
     }
 
 
