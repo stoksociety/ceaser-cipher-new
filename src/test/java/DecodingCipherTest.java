@@ -1,4 +1,17 @@
-import static org.junit.jupiter.api.Assertions.*;
-class DecodingCipherTest {
-  
+import org.junit.Test;
+
+
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class DecodingCipherTest {
+
+    @Test
+    public  void checkDecodedCipher(){
+        DecodingCipher decode = new DecodingCipher();
+        assertEquals("ted", decode.decode("vgf", 2));
+    };
+
 }
